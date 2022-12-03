@@ -1,4 +1,4 @@
-package main
+package problems
 
 import (
 	"bufio"
@@ -8,7 +8,7 @@ import (
 	"sort"
 )
 
-func p1() {
+func P1() {
 	readFile, err := os.Open("inputs/p1.txt")
 
 	var sums []int
