@@ -1,20 +1,20 @@
 package util
 
 import (
-	"os"
-	"bufio"
-	"fmt"
+  "bufio"
+  "fmt"
+  "os"
 )
 
 func FileReader(filePath string) *bufio.Scanner {
-	readFile, err := os.Open(filePath)
+  readFile, err := os.Open(filePath)
 
-	if err != nil {
-		fmt.Println(err)
-	}
+  if err != nil {
+    fmt.Println(err)
+  }
 
-	fileScanner := bufio.NewScanner(readFile)
-	fileScanner.Split(bufio.ScanLines)
+  fileScanner := bufio.NewScanner(readFile)
+  fileScanner.Split(bufio.ScanLines)
 
-	return fileScanner
+  return fileScanner
 }
