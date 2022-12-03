@@ -8,9 +8,10 @@ Unfortunately, I give up. I'll be trying Golang.
 
 Challenge site: [advent of code 2022](https://adventofcode.com/2022).
 
-<hr />
 
 ## Results (so far)
 
 1. `**`
 1. `*`
+<hr />
+Total: 3`*`
