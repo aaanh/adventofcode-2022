@@ -13,5 +13,7 @@ Challenge site: [advent of code 2022](https://adventofcode.com/2022).
 
 1. `**`
 1. `*`
+2. 
 <hr />
-Total: 3`*`
+
+Total: 3 `*`
