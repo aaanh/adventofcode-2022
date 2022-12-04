@@ -15,6 +15,9 @@ func main() {
 	// fmt.Println("Problem 2b")
 	// problems.P2b()
 
-	fmt.Println("Problem 3")
-	problems.P3()
+	// fmt.Println("Problem 3")
+	// problems.P3()
+
+	fmt.Println("Problem 4")
+	problems.P4()
 }
