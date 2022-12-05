@@ -2,7 +2,6 @@ package main
 
 import (
 	"aaanh/aoc/problems"
-	"fmt"
 )
 
 func main() {
@@ -18,6 +17,5 @@ func main() {
 	// fmt.Println("Problem 3")
 	// problems.P3()
 
-	fmt.Println("Problem 4")
 	problems.P4()
 }

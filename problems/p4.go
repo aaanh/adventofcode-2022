@@ -35,6 +35,18 @@ func countContainedAssignments(pairs []string) int {
     return count
 }
 
+// 1start, 1end, 2start, 2end
+func countOverlappingAssignments(pairs []string) int {
+    count := 0
+    for _, pair := range pairs {
+        assignments := parseAssignmentPair(pair)
+        if (assignments[0] <= assignments[3] && assignments[1] >= assignments[2]) || (assignments[2] <= assignments[1] && assignments[3] >= assignments[0]) {
+            count++
+        }
+    }
+    return count
+}
+
 func P4() {
     // Read the file contents
     data, err := ioutil.ReadFile("inputs/p4.txt")
@@ -46,6 +58,12 @@ func P4() {
     // Split the file contents on newlines to get a slice of assignment pairs
     assignmentPairs := strings.Split(fileContents, "\n")
     // Count the number of pairs where one assignment fully contains the other
-    count := countContainedAssignments(assignmentPairs)
-    fmt.Println(count)
+    count_4a := countContainedAssignments(assignmentPairs)
+    // Count the number of pairs where one assignment overlaps the other
+    count_4b := countOverlappingAssignments(assignmentPairs)
+
+    fmt.Println("Problem 4a:")
+    fmt.Println(count_4a)
+    fmt.Println("Problem 4b:")
+    fmt.Println(count_4b)
 }
