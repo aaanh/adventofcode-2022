@@ -37,9 +37,7 @@ func P5() {
   }
 
   fmt.Println("Problem 5a")
-  // fmt.Println(strings.Split(arrOfInputs[len(arrOfInputs) -1], "")[0])
-  // fmt.Println(len(arrOfInputs))
-  // fmt.Println(len(arrOfInputs[len(arrOfInputs)-1]))
+
   fmt.Println(table)
 
 }
