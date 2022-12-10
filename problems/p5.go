@@ -3,19 +3,30 @@ package problems
 import (
   "fmt"
   "strings"
-  // "io/ioutil"
+  "io/ioutil"
+  "strconv"
 )
+
+func parseOperation(s string) []int {
+  arrSplitted := strings.Split(s, " ")
+  target, _ := strconv.Atoi(arrSplitted[1])
+  origin, _ := strconv.Atoi(arrSplitted[3])
+  destin, _ := strconv.Atoi(arrSplitted[5])
+
+  return []int{target, origin, destin}
+}
 
 func P5() {
   // Read input file
-  // data, err := ioutil.ReadFile("inputs/p5.txt")
-  // if err != nil {
-  //   panic(err)
-  // }
+  data, err := ioutil.ReadFile("inputs/p5.txt")
+  if err != nil {
+    panic(err)
+  }
 
-  // fileContents := string(data)
+  fileContents := string(data)
 
-  arrOfInputs := []string{"FDBZTJRN",
+  arrOfInputs := []string{
+    "FDBZTJRN",
     "RSNJH",
     "CRNJGZFQ",
     "FVNGRTQ",
@@ -24,20 +35,8 @@ func P5() {
     "FCLSNHM",
     "DNQMTJ",
     "PGS"}
-
-  var table [][]string
-
-  for i := 0; i < len(arrOfInputs); i++ {
-    table = append(table, tmp)
-    for j := 0; j < len(arrOfInputs[i]); j++ {
-      fmt.Printf(strings.Split(arrOfInputs[i], "")[j])
-      table[i] = append(table[i], strings.Split(arrOfInputs[i], "")[j])
-    }
-    fmt.Println()
-  }
+  
 
   fmt.Println("Problem 5a")
-
-  fmt.Println(table)
 
 }
