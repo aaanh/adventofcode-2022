@@ -1,5 +1,7 @@
 # Advent of Code 2022
 
+> Participation is currently suspended due to final exams 🥲
+
 ~~Just simply an excuse to learn Rust blazingly fast 🏃‍♀️🔥~~
 
 I got depression from trying to read a file and convert the line to integer in Rust.
